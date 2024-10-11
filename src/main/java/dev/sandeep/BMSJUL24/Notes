@@ -1,0 +1,49 @@
+1. OneWay mapping
+2. TwoWay mapping
+
+Mappings and cardinalities are different things
+-------------------------
+OneWay Mapping
+City
+name
+List<Theatre> theatres;
+
+Theatre
+name
+address
+---------------
+TwoWay mapping
+City
+name
+List<Theatre> theatres;
+
+Theatre
+name
+address
+City city
+--------------------------
+city
+theatre
+city_theatre
+
+1. Find all theatres in a city
+2. Find city for a theatre
+
+Use Case ->
+City -> show all theatre
+Theatre -> show city name
+
+1:M -> OneWay mapping
+City[name, <T1, T2, T3>]
+Theatre[name, address, <A1, A2, A3>] -> no need to have the city name
+
+
+1:M -> TwoMapping
+User[name, <V1,V2,V3>]
+Vehicle[model, userName]
+
+-------------------------
+GET -> reading/getting data     -> R
+POST -> creating new data       -> C
+PUT -> updating existing data   -> U
+DELETE -> deleting data         -> D
