@@ -16,8 +16,6 @@ public abstract class BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 }
 //There are some fields which would be common across all the models
 // id
