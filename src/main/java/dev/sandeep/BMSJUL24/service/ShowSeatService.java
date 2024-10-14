@@ -31,4 +31,8 @@ public class ShowSeatService {
     public void deleteShowSeatById(int id) {
         showSeatRepository.deleteById(id);
     }
+
+    public ShowSeat updateShowSeat(ShowSeat showSeat) {
+        return showSeatRepository.save(showSeat);
+    }
 }
